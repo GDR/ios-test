@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "app/StationSelectionViewController.swift"
+            timestampString = "514070783.723474"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "StationSelectionViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "app.StationSelectionViewController.__deallocating_deinit"
+                  moduleName = "app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/GDR/Git/ITAvia/Mobile/ios/app2/app/app/StationSelectionViewController.swift"
+                  timestampString = "514070883.104276"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "app.StationSelectionViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; app.StationSelectionViewController"
+                  moduleName = "app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/GDR/Git/ITAvia/Mobile/ios/app2/app/app/StationSelectionViewController.swift"
+                  timestampString = "514070883.108031"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "96">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "app.StationSelectionViewController.__allocating_init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; app.StationSelectionViewController"
+                  moduleName = "app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/GDR/Git/ITAvia/Mobile/ios/app2/app/app/StationSelectionViewController.swift"
+                  timestampString = "514070883.111835"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "app.StationSelectionViewController.__allocating_init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;app.StationSelectionViewController&gt;"
+                  moduleName = "app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/GDR/Git/ITAvia/Mobile/ios/app2/app/app/StationSelectionViewController.swift"
+                  timestampString = "514070883.114296"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "app.StationSelectionViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;app.StationSelectionViewController&gt;"
+                  moduleName = "app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/GDR/Git/ITAvia/Mobile/ios/app2/app/app/StationSelectionViewController.swift"
+                  timestampString = "514070883.116883"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "60">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "app/FuelPaymentViewController.swift"
+            timestampString = "514136634.362976"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "rublesChanged()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

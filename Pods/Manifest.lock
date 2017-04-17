@@ -1,0 +1,19 @@
+PODS:
+  - GoogleMaps (2.2.0):
+    - GoogleMaps/Maps (= 2.2.0)
+  - GoogleMaps/Base (2.2.0)
+  - GoogleMaps/Maps (2.2.0):
+    - GoogleMaps/Base
+  - MBProgressHUD (1.0.0)
+
+DEPENDENCIES:
+  - GoogleMaps
+  - MBProgressHUD (~> 1.0.0)
+
+SPEC CHECKSUMS:
+  GoogleMaps: 104c418d61ab8a05dff06ed0784c25ea9d37da45
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+
+PODFILE CHECKSUM: 21e3727f09793235d50a78256d5a8e00c4f3c226
+
+COCOAPODS: 1.2.0

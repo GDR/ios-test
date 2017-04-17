@@ -1,26 +1,1894 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="uV3-iV-khb">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Offers View Controller-->
+        <scene sceneID="T9c-dr-jcG">
+            <objects>
+                <viewController id="XxB-kD-c1u" customClass="OffersViewController" customModule="app" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="51w-kd-3gT"/>
+                        <viewControllerLayoutGuide type="bottom" id="v79-PQ-S5q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wAX-Fy-itN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g6z-Zg-jGI">
+                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BDN-O9-IN1">
+                                        <rect key="frame" x="0.0" y="-60" width="320" height="400"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="offer_two" translatesAutoresizingMaskIntoConstraints="NO" id="qtd-Id-qyS">
+                                                <rect key="frame" x="0.0" y="50" width="320" height="135"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="qtd-Id-qyS" secondAttribute="height" multiplier="375:158" id="0Fj-ZA-Os3"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="offer_one" translatesAutoresizingMaskIntoConstraints="NO" id="fJn-my-qcY">
+                                                <rect key="frame" x="0.0" y="210" width="320" height="135"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="fJn-my-qcY" secondAttribute="height" multiplier="375:158" id="lTD-PC-zVK"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ПЕРСОНАЛЬНЫЕ ПРЕДЛОЖЕНИЯ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gDv-f4-HT1">
+                                                <rect key="frame" x="20" y="15" width="280" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="400" id="0ok-il-6HI"/>
+                                            <constraint firstAttribute="trailing" secondItem="fJn-my-qcY" secondAttribute="trailing" id="AFZ-4i-7Eb"/>
+                                            <constraint firstItem="qtd-Id-qyS" firstAttribute="leading" secondItem="BDN-O9-IN1" secondAttribute="leading" id="LUP-g2-nq2"/>
+                                            <constraint firstItem="fJn-my-qcY" firstAttribute="width" secondItem="BDN-O9-IN1" secondAttribute="width" id="az3-9a-y2w"/>
+                                            <constraint firstAttribute="trailing" secondItem="qtd-Id-qyS" secondAttribute="trailing" id="bFK-Ve-oNi"/>
+                                            <constraint firstAttribute="trailing" secondItem="gDv-f4-HT1" secondAttribute="trailing" constant="20" id="fCV-sG-DKm"/>
+                                            <constraint firstItem="fJn-my-qcY" firstAttribute="leading" secondItem="BDN-O9-IN1" secondAttribute="leading" id="jMx-dy-L7l"/>
+                                            <constraint firstItem="gDv-f4-HT1" firstAttribute="leading" secondItem="BDN-O9-IN1" secondAttribute="leading" constant="20" id="rUL-E3-zsC"/>
+                                            <constraint firstItem="qtd-Id-qyS" firstAttribute="top" secondItem="gDv-f4-HT1" secondAttribute="bottom" constant="14" id="smP-GX-oyd"/>
+                                            <constraint firstItem="gDv-f4-HT1" firstAttribute="top" secondItem="BDN-O9-IN1" secondAttribute="top" constant="15" id="tPE-qL-TsU"/>
+                                            <constraint firstItem="qtd-Id-qyS" firstAttribute="top" secondItem="BDN-O9-IN1" secondAttribute="top" constant="50" id="v2a-JP-n69"/>
+                                            <constraint firstItem="fJn-my-qcY" firstAttribute="top" secondItem="qtd-Id-qyS" secondAttribute="bottom" constant="25" id="wRO-td-sTt"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="BDN-O9-IN1" secondAttribute="bottom" id="gc6-bp-lA8"/>
+                                    <constraint firstItem="BDN-O9-IN1" firstAttribute="width" secondItem="g6z-Zg-jGI" secondAttribute="width" id="gwQ-i2-cTw"/>
+                                    <constraint firstItem="BDN-O9-IN1" firstAttribute="leading" secondItem="g6z-Zg-jGI" secondAttribute="leading" id="meM-I7-q9Q"/>
+                                    <constraint firstItem="BDN-O9-IN1" firstAttribute="top" secondItem="g6z-Zg-jGI" secondAttribute="top" constant="-60" id="pWT-RO-d9c"/>
+                                    <constraint firstAttribute="trailing" secondItem="BDN-O9-IN1" secondAttribute="trailing" id="qiC-5e-kRl"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="g6z-Zg-jGI" firstAttribute="trailing" secondItem="wAX-Fy-itN" secondAttribute="trailingMargin" constant="16" id="2CC-Ee-xRv"/>
+                            <constraint firstItem="g6z-Zg-jGI" firstAttribute="top" secondItem="51w-kd-3gT" secondAttribute="bottom" id="V1f-hn-GoX"/>
+                            <constraint firstItem="v79-PQ-S5q" firstAttribute="top" secondItem="g6z-Zg-jGI" secondAttribute="bottom" id="WAY-a7-sdM"/>
+                            <constraint firstItem="g6z-Zg-jGI" firstAttribute="leading" secondItem="wAX-Fy-itN" secondAttribute="leadingMargin" constant="-16" id="jm6-xJ-chq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Lbc-im-wFX"/>
+                    <connections>
+                        <outlet property="navigationBar" destination="Lbc-im-wFX" id="iop-af-976"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UEI-rG-4Mb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4778" y="-623"/>
+        </scene>
+        <!-- -->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="StationSelectionViewController" customModule="app" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <view key="view" contentMode="scaleToFill" misplaced="YES" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dba-bW-tu4" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="455"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HXF-sC-Wwc">
+                                        <rect key="frame" x="0.0" y="214" width="320" height="290"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bS-qm-QbX">
+                                                <rect key="frame" x="16" y="62" width="288" height="50"/>
+                                                <color key="backgroundColor" red="0.92941176470588238" green="0.10980392156862745" blue="0.16862745098039217" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="fZE-co-31o"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <state key="normal" title="Начать заправку">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="onButtonClicker:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c4N-tl-HjE"/>
+                                                    <segue destination="k5v-0d-qye" kind="show" id="hvF-wo-09C"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="АЗС №84" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fQb-8x-k3h">
+                                                <rect key="frame" x="16" y="16" width="95" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hgE-BA-DNv">
+                                                <rect key="frame" x="16" y="127" width="288" height="1"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="Pjw-22-1X3"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Aa-kz-N6P">
+                                                <rect key="frame" x="16" y="136" width="288" height="21"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Открыто">
+                                                        <attributes>
+                                                            <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <color key="NSColor" red="0.36078431372549019" green="0.7803921568627451" blue="0.8666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" metaFont="system" size="17"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" до 21ч">
+                                                        <attributes>
+                                                            <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" metaFont="system" size="17"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RbV-eo-0g9">
+                                                <rect key="frame" x="16" y="165" width="288" height="61"/>
+                                                <string key="text">ул. Руставели, 25, лит. А, СПб, 195273
+ДТ, 92, 95, 95 Jet</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EnG-90-L8s">
+                                                <rect key="frame" x="268" y="4" width="48" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="48" id="07O-kj-6XN"/>
+                                                    <constraint firstAttribute="height" constant="48" id="VmW-Ly-nRE"/>
+                                                </constraints>
+                                                <state key="normal" image="close_button"/>
+                                                <connections>
+                                                    <action selector="closeButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ht3-hK-TVZ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="290" id="C7F-62-zvs"/>
+                                            <constraint firstItem="4bS-qm-QbX" firstAttribute="top" secondItem="fQb-8x-k3h" secondAttribute="bottom" constant="22" id="OQk-nC-aUc"/>
+                                            <constraint firstItem="4bS-qm-QbX" firstAttribute="leading" secondItem="HXF-sC-Wwc" secondAttribute="leading" constant="16" id="RUI-qi-3Jq"/>
+                                            <constraint firstItem="fQb-8x-k3h" firstAttribute="top" secondItem="HXF-sC-Wwc" secondAttribute="top" constant="16" id="T0W-hR-0V5"/>
+                                            <constraint firstItem="hgE-BA-DNv" firstAttribute="top" secondItem="4bS-qm-QbX" secondAttribute="bottom" constant="15" id="Vla-Vs-ppG"/>
+                                            <constraint firstItem="hgE-BA-DNv" firstAttribute="leading" secondItem="4bS-qm-QbX" secondAttribute="leading" id="Vqb-GD-27m"/>
+                                            <constraint firstAttribute="height" constant="290" id="W27-W0-CpS"/>
+                                            <constraint firstItem="0Aa-kz-N6P" firstAttribute="leading" secondItem="HXF-sC-Wwc" secondAttribute="leading" constant="16" id="Xu5-TA-mZn"/>
+                                            <constraint firstItem="0Aa-kz-N6P" firstAttribute="top" secondItem="hgE-BA-DNv" secondAttribute="bottom" constant="8" id="gBG-PF-juz"/>
+                                            <constraint firstItem="EnG-90-L8s" firstAttribute="top" secondItem="HXF-sC-Wwc" secondAttribute="top" constant="4" id="h7A-vh-eta"/>
+                                            <constraint firstItem="RbV-eo-0g9" firstAttribute="leading" secondItem="HXF-sC-Wwc" secondAttribute="leading" constant="16" id="hrQ-q1-Bq8"/>
+                                            <constraint firstItem="fQb-8x-k3h" firstAttribute="leading" secondItem="HXF-sC-Wwc" secondAttribute="leading" constant="16" id="hvD-3L-9u8"/>
+                                            <constraint firstAttribute="trailing" secondItem="EnG-90-L8s" secondAttribute="trailing" constant="4" id="jof-jr-iwG"/>
+                                            <constraint firstAttribute="trailing" secondItem="4bS-qm-QbX" secondAttribute="trailing" constant="16" id="lWt-AL-4Cl"/>
+                                            <constraint firstAttribute="trailing" secondItem="RbV-eo-0g9" secondAttribute="trailing" constant="16" id="sW2-5i-BRi"/>
+                                            <constraint firstItem="hgE-BA-DNv" firstAttribute="trailing" secondItem="4bS-qm-QbX" secondAttribute="trailing" id="v3X-OL-4i8"/>
+                                            <constraint firstItem="RbV-eo-0g9" firstAttribute="top" secondItem="0Aa-kz-N6P" secondAttribute="bottom" constant="8" id="vp7-MS-yQp"/>
+                                            <constraint firstAttribute="trailing" secondItem="0Aa-kz-N6P" secondAttribute="trailing" constant="16" id="yNU-fT-49c"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="HXF-sC-Wwc" firstAttribute="centerX" secondItem="Dba-bW-tu4" secondAttribute="centerX" id="5xB-Ii-blV"/>
+                                    <constraint firstItem="HXF-sC-Wwc" firstAttribute="width" secondItem="Dba-bW-tu4" secondAttribute="width" id="coP-wa-DmL"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Dba-bW-tu4" secondAttribute="bottom" id="Dkd-bo-ADj"/>
+                            <constraint firstItem="Dba-bW-tu4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="U1v-A6-sYI"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="HXF-sC-Wwc" secondAttribute="bottom" constant="-49" id="gh3-Fl-igB"/>
+                            <constraint firstItem="Dba-bW-tu4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="mOh-6D-nfs"/>
+                            <constraint firstAttribute="trailing" secondItem="Dba-bW-tu4" secondAttribute="trailing" id="utn-KQ-goq"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title=" " id="6XD-kU-ltN">
+                        <barButtonItem key="backBarButtonItem" title=" " id="c76-fy-4kb"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="constrait" destination="gh3-Fl-igB" id="L4f-yW-gme"/>
+                        <outlet property="mapView" destination="Dba-bW-tu4" id="6zp-rI-uOm"/>
+                        <outlet property="navigationBar" destination="6XD-kU-ltN" id="ALP-sW-40e"/>
+                        <outlet property="stationInfo" destination="HXF-sC-Wwc" id="1uz-m4-xTF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="4781.159420289855" y="122.28260869565219"/>
+        </scene>
+        <!--Account View Controller-->
+        <scene sceneID="Y4a-Oy-ZJI">
+            <objects>
+                <viewController id="y4b-be-PNM" customClass="AccountViewController" customModule="app" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Dyg-N4-je0"/>
+                        <viewControllerLayoutGuide type="bottom" id="PKQ-Yt-BZn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="n9P-BW-adp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Статистика" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c1t-yz-DHv">
+                                <rect key="frame" x="16" y="80" width="81" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="arrow" translatesAutoresizingMaskIntoConstraints="NO" id="RTp-er-Of8">
+                                <rect key="frame" x="295" y="109" width="9" height="44"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Всего заправлено" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bZr-bg-SxU">
+                                <rect key="frame" x="16" y="204" width="146" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="345,43 л." textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kjd-Oi-XXz">
+                                <rect key="frame" x="230" y="204" width="74" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Всего потрачено" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WiY-qx-5mv">
+                                <rect key="frame" x="16" y="238" width="136" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EAy-3j-gT5">
+                                <rect key="frame" x="16" y="366" width="304" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="5xK-Dc-3mG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Выход">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24 941,90 руб." textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t0O-HG-a0j">
+                                <rect key="frame" x="188" y="238" width="115" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8oy-6m-tno">
+                                <rect key="frame" x="16" y="109" width="304" height="1"/>
+                                <color key="backgroundColor" red="0.80696403586924981" green="0.80696403586924981" blue="0.80696403586924981" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="mlt-0R-lLd"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nBt-jw-ihe">
+                                <rect key="frame" x="16" y="272" width="304" height="1"/>
+                                <color key="backgroundColor" red="0.80696403586924981" green="0.80696403586924981" blue="0.80696403586924981" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="hpm-z8-7I3"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aOt-sP-pdt">
+                                <rect key="frame" x="16" y="321" width="304" height="1"/>
+                                <color key="backgroundColor" red="0.80696403586924981" green="0.80696403586924981" blue="0.80696403586924981" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="Ofd-hg-bpz"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VEb-jf-Szb">
+                                <rect key="frame" x="16" y="367" width="304" height="1"/>
+                                <color key="backgroundColor" red="0.80696403586924981" green="0.80696403586924981" blue="0.80696403586924981" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="XPK-Z9-P1M"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V1R-br-EJg">
+                                <rect key="frame" x="16" y="109" width="304" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="H2O-qJ-rNt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="История заправок">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="mmN-rC-LRp" kind="show" id="Kp6-3j-QNf"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="EUJ-E6-wtI">
+                                <rect key="frame" x="16" y="163" width="288" height="29"/>
+                                <segments>
+                                    <segment title="Неделя"/>
+                                    <segment title="Месяц"/>
+                                    <segment title="Квартал"/>
+                                    <segment title="Год"/>
+                                </segments>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Аккаунт" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Fo-5u-9L3">
+                                <rect key="frame" x="16" y="295" width="58" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sSp-3V-FXP">
+                                <rect key="frame" x="16" y="322" width="304" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Xl4-vd-OBA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Платежные карты">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="zmI-KY-9bb" kind="show" id="6Ux-Ek-jGh"/>
+                                </connections>
+                            </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="arrow" translatesAutoresizingMaskIntoConstraints="NO" id="Xis-1O-QQ9">
+                                <rect key="frame" x="295" y="322" width="9" height="44"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kjd-Oi-XXz" firstAttribute="centerY" secondItem="bZr-bg-SxU" secondAttribute="centerY" id="03N-Rk-M5F"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="WiY-qx-5mv" secondAttribute="leading" id="1hL-G0-Gf3"/>
+                            <constraint firstItem="Xis-1O-QQ9" firstAttribute="bottom" secondItem="sSp-3V-FXP" secondAttribute="bottom" id="2B6-dL-Q3E"/>
+                            <constraint firstAttribute="trailing" secondItem="nBt-jw-ihe" secondAttribute="trailing" id="2fs-sO-C3L"/>
+                            <constraint firstItem="nBt-jw-ihe" firstAttribute="leading" secondItem="n9P-BW-adp" secondAttribute="leading" constant="16" id="3Wy-Zh-x5b"/>
+                            <constraint firstItem="RTp-er-Of8" firstAttribute="bottom" secondItem="V1R-br-EJg" secondAttribute="bottom" id="3zY-eh-bXb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="t0O-HG-a0j" secondAttribute="trailing" constant="1" id="4Tl-d5-l5G"/>
+                            <constraint firstItem="nBt-jw-ihe" firstAttribute="top" secondItem="WiY-qx-5mv" secondAttribute="bottom" constant="13" id="56K-nW-Qvi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EAy-3j-gT5" secondAttribute="trailing" constant="-16" id="5ck-8C-ZiE"/>
+                            <constraint firstItem="V1R-br-EJg" firstAttribute="top" secondItem="c1t-yz-DHv" secondAttribute="bottom" constant="12" id="61s-XB-o6J"/>
+                            <constraint firstItem="EUJ-E6-wtI" firstAttribute="top" secondItem="V1R-br-EJg" secondAttribute="bottom" constant="10" id="79f-4J-ez5"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="bZr-bg-SxU" secondAttribute="leading" id="BuL-dT-7wc"/>
+                            <constraint firstAttribute="trailing" secondItem="VEb-jf-Szb" secondAttribute="trailing" id="Foo-ag-WMI"/>
+                            <constraint firstItem="5Fo-5u-9L3" firstAttribute="top" secondItem="nBt-jw-ihe" secondAttribute="bottom" constant="22" id="GWz-Nm-NgJ"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="sSp-3V-FXP" secondAttribute="leading" id="HEa-45-ZeK"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="5Fo-5u-9L3" secondAttribute="leading" id="Jb6-zn-oeM"/>
+                            <constraint firstItem="EAy-3j-gT5" firstAttribute="top" secondItem="VEb-jf-Szb" secondAttribute="bottom" constant="-2" id="Pcw-HX-1Gd"/>
+                            <constraint firstItem="aOt-sP-pdt" firstAttribute="leading" secondItem="n9P-BW-adp" secondAttribute="leading" constant="16" id="QUH-XZ-yB2"/>
+                            <constraint firstItem="8oy-6m-tno" firstAttribute="top" secondItem="c1t-yz-DHv" secondAttribute="bottom" constant="12" id="S5R-9y-8Oe"/>
+                            <constraint firstItem="VEb-jf-Szb" firstAttribute="top" secondItem="sSp-3V-FXP" secondAttribute="bottom" constant="1" id="UiM-Th-XAn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kjd-Oi-XXz" secondAttribute="trailing" id="VEp-C5-NSY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EUJ-E6-wtI" secondAttribute="trailing" id="Vbh-zH-Al9"/>
+                            <constraint firstItem="8oy-6m-tno" firstAttribute="leading" secondItem="n9P-BW-adp" secondAttribute="leading" constant="16" id="WQi-5E-maa"/>
+                            <constraint firstItem="t0O-HG-a0j" firstAttribute="centerY" secondItem="WiY-qx-5mv" secondAttribute="centerY" id="Xlx-g4-cZp"/>
+                            <constraint firstItem="RTp-er-Of8" firstAttribute="trailing" secondItem="n9P-BW-adp" secondAttribute="trailingMargin" id="Ya7-v4-vnE"/>
+                            <constraint firstItem="V1R-br-EJg" firstAttribute="leading" secondItem="n9P-BW-adp" secondAttribute="leading" constant="16" id="ZBd-a1-Kfk"/>
+                            <constraint firstItem="c1t-yz-DHv" firstAttribute="leading" secondItem="n9P-BW-adp" secondAttribute="leadingMargin" id="Zzb-k6-roK"/>
+                            <constraint firstAttribute="trailing" secondItem="V1R-br-EJg" secondAttribute="trailing" id="edC-w0-qit"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Xis-1O-QQ9" secondAttribute="trailing" id="eu6-FQ-Moo"/>
+                            <constraint firstAttribute="trailing" secondItem="sSp-3V-FXP" secondAttribute="trailing" id="fvY-sP-7UX"/>
+                            <constraint firstItem="RTp-er-Of8" firstAttribute="centerY" secondItem="V1R-br-EJg" secondAttribute="centerY" id="g0Q-s9-Ygy"/>
+                            <constraint firstItem="c1t-yz-DHv" firstAttribute="top" secondItem="Dyg-N4-je0" secondAttribute="bottom" constant="16" id="gST-Wi-aZi"/>
+                            <constraint firstAttribute="trailing" secondItem="8oy-6m-tno" secondAttribute="trailing" id="i1h-wb-yzE"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="EUJ-E6-wtI" secondAttribute="leading" id="iHm-pL-tbg"/>
+                            <constraint firstItem="bZr-bg-SxU" firstAttribute="top" secondItem="EUJ-E6-wtI" secondAttribute="bottom" constant="13" id="iWl-YV-6cz"/>
+                            <constraint firstItem="Xis-1O-QQ9" firstAttribute="top" secondItem="sSp-3V-FXP" secondAttribute="top" id="jpn-i0-bZ1"/>
+                            <constraint firstItem="WiY-qx-5mv" firstAttribute="top" secondItem="bZr-bg-SxU" secondAttribute="bottom" constant="13" id="kSO-B2-XF5"/>
+                            <constraint firstItem="RTp-er-Of8" firstAttribute="top" secondItem="V1R-br-EJg" secondAttribute="top" id="nAU-NP-W9C"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="EAy-3j-gT5" secondAttribute="leading" id="t2v-5v-1DG"/>
+                            <constraint firstItem="sSp-3V-FXP" firstAttribute="top" secondItem="aOt-sP-pdt" secondAttribute="bottom" id="uNZ-WH-6lo"/>
+                            <constraint firstAttribute="trailing" secondItem="aOt-sP-pdt" secondAttribute="trailing" id="ugc-oQ-o3A"/>
+                            <constraint firstItem="Xis-1O-QQ9" firstAttribute="centerY" secondItem="sSp-3V-FXP" secondAttribute="centerY" id="uvv-N0-dgV"/>
+                            <constraint firstItem="VEb-jf-Szb" firstAttribute="leading" secondItem="n9P-BW-adp" secondAttribute="leading" constant="16" id="x06-Jj-Dsc"/>
+                            <constraint firstItem="aOt-sP-pdt" firstAttribute="top" secondItem="5Fo-5u-9L3" secondAttribute="bottom" constant="9" id="ykA-ms-VDI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="o7R-ZI-96A"/>
+                    <connections>
+                        <outlet property="navigationBar" destination="o7R-ZI-96A" id="ITk-ka-3KD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dBD-fH-u9k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4777.5" y="935.91549295774644"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ANk-XD-6YU">
+            <objects>
+                <viewController id="mmN-rC-LRp" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2lF-A7-K4O"/>
+                        <viewControllerLayoutGuide type="bottom" id="WqG-uk-58Z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kqi-BX-YCg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Neu-xl-kAw">
+                                <rect key="frame" x="16" y="80" width="288" height="22"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="95 Jet  ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.20177" green="0.20177" blue="0.20177" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="16" name="SFUIText-Regular"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" minimumLineHeight="22" maximumLineHeight="22" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="28">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="56">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="84">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="112">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="140">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="168">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="196">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="224">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="252">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="280">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="308">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="336">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="35">
+                                        <attributes>
+                                            <color key="NSColor" red="0.20177" green="0.20177" blue="0.20177" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="16" name="SFUIText-Bold"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" minimumLineHeight="22" maximumLineHeight="22" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="28">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="56">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="84">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="112">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="140">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="168">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="196">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="224">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="252">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="280">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="308">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="336">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" л. х 38.50 = ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.20177" green="0.20177" blue="0.20177" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="16" name="SFUIText-Regular"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" minimumLineHeight="22" maximumLineHeight="22" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="28">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="56">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="84">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="112">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="140">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="168">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="196">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="224">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="252">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="280">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="308">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="336">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="1347,50">
+                                        <attributes>
+                                            <color key="NSColor" red="0.20177" green="0.20177" blue="0.20177" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="16" name="SFUIText-Bold"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" minimumLineHeight="22" maximumLineHeight="22" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="28">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="56">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="84">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="112">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="140">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="168">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="196">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="224">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="252">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="280">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="308">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="336">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" руб.">
+                                        <attributes>
+                                            <color key="NSColor" red="0.20177" green="0.20177" blue="0.20177" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="16" name="SFUIText-Regular"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" minimumLineHeight="22" maximumLineHeight="22" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="28">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="56">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="84">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="112">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="140">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="168">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="196">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="224">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="252">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="280">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="308">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="336">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mgD-MZ-dN3">
+                                <rect key="frame" x="16" y="102" width="288" height="44"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">ул. Руставели, 25, лит. А, СПб, 195273
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.20177" green="0.20177" blue="0.20177" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="16" name="SFUIText-Regular"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" minimumLineHeight="22" maximumLineHeight="22" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="28">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="56">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="84">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="112">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="140">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="168">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="196">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="224">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="252">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="280">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="308">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="336">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="18 окт 2017, 13:45">
+                                        <attributes>
+                                            <color key="NSColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="16" name="SFUIText-Regular"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" minimumLineHeight="22" maximumLineHeight="22" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="28">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="56">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="84">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="112">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="140">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="168">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="196">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="224">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="252">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="280">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="308">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="336">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="04j-LP-2N6">
+                                <rect key="frame" x="16" y="156" width="288" height="1"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.20395440924657535" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="wXg-BC-2VI"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n57-a8-tHW">
+                                <rect key="frame" x="16" y="167" width="288" height="22"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="95 Jet  ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.20177" green="0.20177" blue="0.20177" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="16" name="SFUIText-Regular"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" minimumLineHeight="22" maximumLineHeight="22" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="28">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="56">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="84">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="112">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="140">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="168">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="196">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="224">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="252">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="280">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="308">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="336">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="15">
+                                        <attributes>
+                                            <color key="NSColor" red="0.20177" green="0.20177" blue="0.20177" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="16" name="SFUIText-Bold"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" minimumLineHeight="22" maximumLineHeight="22" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="28">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="56">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="84">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="112">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="140">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="168">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="196">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="224">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="252">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="280">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="308">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="336">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" л. х 38.50 = ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.20177" green="0.20177" blue="0.20177" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="16" name="SFUIText-Regular"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" minimumLineHeight="22" maximumLineHeight="22" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="28">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="56">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="84">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="112">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="140">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="168">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="196">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="224">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="252">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="280">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="308">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="336">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="577,50">
+                                        <attributes>
+                                            <color key="NSColor" red="0.20177" green="0.20177" blue="0.20177" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="16" name="SFUIText-Bold"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" minimumLineHeight="22" maximumLineHeight="22" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="28">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="56">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="84">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="112">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="140">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="168">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="196">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="224">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="252">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="280">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="308">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="336">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" руб.">
+                                        <attributes>
+                                            <color key="NSColor" red="0.20177" green="0.20177" blue="0.20177" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="16" name="SFUIText-Regular"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" minimumLineHeight="22" maximumLineHeight="22" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="28">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="56">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="84">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="112">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="140">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="168">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="196">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="224">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="252">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="280">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="308">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="336">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ogp-5F-PEM">
+                                <rect key="frame" x="16" y="189" width="288" height="44"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">ул. Руставели, 25, лит. А, СПб, 195273
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.20177" green="0.20177" blue="0.20177" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="16" name="SFUIText-Regular"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" minimumLineHeight="22" maximumLineHeight="22" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="28">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="56">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="84">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="112">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="140">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="168">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="196">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="224">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="252">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="280">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="308">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="336">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="7 окт 2017, 13:45">
+                                        <attributes>
+                                            <color key="NSColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="16" name="SFUIText-Regular"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" minimumLineHeight="22" maximumLineHeight="22" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="28">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="56">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="84">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="112">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="140">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="168">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="196">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="224">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="252">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="280">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="308">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="336">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B9H-EI-DBW">
+                                <rect key="frame" x="16" y="241" width="288" height="1"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.20395440919999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="YXB-I0-cJn"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="n57-a8-tHW" firstAttribute="top" secondItem="04j-LP-2N6" secondAttribute="bottom" constant="10" id="2Ni-GX-gVd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="n57-a8-tHW" secondAttribute="trailing" id="2pc-tr-BsG"/>
+                            <constraint firstItem="B9H-EI-DBW" firstAttribute="leading" secondItem="kqi-BX-YCg" secondAttribute="leadingMargin" id="3lh-dC-AvP"/>
+                            <constraint firstItem="04j-LP-2N6" firstAttribute="leading" secondItem="kqi-BX-YCg" secondAttribute="leadingMargin" id="6Ls-JZ-8kJ"/>
+                            <constraint firstItem="Neu-xl-kAw" firstAttribute="top" secondItem="2lF-A7-K4O" secondAttribute="bottom" constant="16" id="72c-Hh-XjU"/>
+                            <constraint firstItem="Ogp-5F-PEM" firstAttribute="leading" secondItem="kqi-BX-YCg" secondAttribute="leadingMargin" id="737-zG-HYv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ogp-5F-PEM" secondAttribute="trailing" id="7NF-2T-28H"/>
+                            <constraint firstItem="Ogp-5F-PEM" firstAttribute="top" secondItem="n57-a8-tHW" secondAttribute="bottom" id="DxK-RG-gcT"/>
+                            <constraint firstItem="B9H-EI-DBW" firstAttribute="trailing" secondItem="kqi-BX-YCg" secondAttribute="trailingMargin" id="NfE-BC-FuR"/>
+                            <constraint firstItem="04j-LP-2N6" firstAttribute="trailing" secondItem="kqi-BX-YCg" secondAttribute="trailingMargin" id="QNS-Df-k7z"/>
+                            <constraint firstItem="Neu-xl-kAw" firstAttribute="trailing" secondItem="kqi-BX-YCg" secondAttribute="trailingMargin" id="W5X-e7-EbT"/>
+                            <constraint firstItem="B9H-EI-DBW" firstAttribute="top" secondItem="Ogp-5F-PEM" secondAttribute="bottom" constant="8" id="ZyI-Ay-Lkr"/>
+                            <constraint firstItem="mgD-MZ-dN3" firstAttribute="leading" secondItem="kqi-BX-YCg" secondAttribute="leadingMargin" id="fu5-lu-uOn"/>
+                            <constraint firstItem="mgD-MZ-dN3" firstAttribute="top" secondItem="Neu-xl-kAw" secondAttribute="bottom" id="lCd-J0-bcj"/>
+                            <constraint firstItem="n57-a8-tHW" firstAttribute="leading" secondItem="kqi-BX-YCg" secondAttribute="leadingMargin" id="ljY-oN-pVH"/>
+                            <constraint firstItem="04j-LP-2N6" firstAttribute="top" secondItem="mgD-MZ-dN3" secondAttribute="bottom" constant="10" id="onv-Qn-8TV"/>
+                            <constraint firstItem="Neu-xl-kAw" firstAttribute="leading" secondItem="kqi-BX-YCg" secondAttribute="leadingMargin" id="rJB-LW-X51"/>
+                            <constraint firstItem="mgD-MZ-dN3" firstAttribute="trailing" secondItem="kqi-BX-YCg" secondAttribute="trailingMargin" id="rcm-pC-AtN"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qu8-eX-TbD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5704" y="936"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="uqC-z8-9Kb">
+            <objects>
+                <viewController id="zmI-KY-9bb" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ca7-TE-1js"/>
+                        <viewControllerLayoutGuide type="bottom" id="aZP-QG-pOz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Oan-Ac-cP1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jVU-OH-6Uo">
+                                <rect key="frame" x="16" y="80" width="288" height="50"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Credit_Card_One" translatesAutoresizingMaskIntoConstraints="NO" id="izG-AY-63G">
+                                        <rect key="frame" x="8" y="6" width="170" height="38"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="170" id="Scn-WQ-RvP"/>
+                                            <constraint firstAttribute="height" constant="38" id="yfF-3Y-ozV"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="61M-Km-q7V">
+                                        <rect key="frame" x="260" y="15" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="7pa-eS-2np"/>
+                                            <constraint firstAttribute="width" constant="20" id="GQv-Bb-sDp"/>
+                                        </constraints>
+                                        <state key="normal" image="close_button"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="61M-Km-q7V" firstAttribute="centerY" secondItem="jVU-OH-6Uo" secondAttribute="centerY" id="174-k3-hBO"/>
+                                    <constraint firstAttribute="trailing" secondItem="61M-Km-q7V" secondAttribute="trailing" constant="8" id="5en-zq-EAc"/>
+                                    <constraint firstItem="izG-AY-63G" firstAttribute="top" secondItem="jVU-OH-6Uo" secondAttribute="top" constant="6" id="6wi-N9-5E5"/>
+                                    <constraint firstItem="izG-AY-63G" firstAttribute="centerY" secondItem="jVU-OH-6Uo" secondAttribute="centerY" id="Fzl-by-vxa"/>
+                                    <constraint firstAttribute="height" constant="50" id="aoI-nP-qnb"/>
+                                    <constraint firstAttribute="bottom" secondItem="izG-AY-63G" secondAttribute="bottom" constant="6" id="e4u-5H-CPx"/>
+                                    <constraint firstItem="izG-AY-63G" firstAttribute="leading" secondItem="jVU-OH-6Uo" secondAttribute="leading" constant="8" id="weH-rV-nCv"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GlZ-3u-reL">
+                                <rect key="frame" x="16" y="145" width="288" height="50"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Credit_Card_Two" translatesAutoresizingMaskIntoConstraints="NO" id="Rgw-zf-Jxo">
+                                        <rect key="frame" x="8" y="6" width="170" height="38"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="38" id="LxD-f2-fwF"/>
+                                            <constraint firstAttribute="width" constant="170" id="fuT-bh-YSi"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uab-GJ-Eub">
+                                        <rect key="frame" x="260" y="15" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="5HR-EN-zcW"/>
+                                            <constraint firstAttribute="width" constant="20" id="ILY-ba-Y6z"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="XWG-cZ-O5E"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="pWx-f8-X4y"/>
+                                        </constraints>
+                                        <state key="normal" image="close_button"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="uab-GJ-Eub" secondAttribute="trailing" constant="8" id="22T-Rd-nM2"/>
+                                    <constraint firstAttribute="height" constant="50" id="6yK-zf-qFh"/>
+                                    <constraint firstAttribute="bottom" secondItem="Rgw-zf-Jxo" secondAttribute="bottom" constant="6" id="Cti-3F-LrG"/>
+                                    <constraint firstAttribute="trailing" secondItem="uab-GJ-Eub" secondAttribute="trailing" constant="8" id="G9R-0m-A2a"/>
+                                    <constraint firstItem="Rgw-zf-Jxo" firstAttribute="top" secondItem="GlZ-3u-reL" secondAttribute="top" constant="6" id="KDZ-nL-wUm"/>
+                                    <constraint firstItem="uab-GJ-Eub" firstAttribute="centerY" secondItem="GlZ-3u-reL" secondAttribute="centerY" id="Rtc-Iq-GRd"/>
+                                    <constraint firstItem="Rgw-zf-Jxo" firstAttribute="leading" secondItem="GlZ-3u-reL" secondAttribute="leading" constant="8" id="Wa3-Xb-8gV"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SW4-3O-ti4">
+                                <rect key="frame" x="16" y="203" width="288" height="30"/>
+                                <state key="normal" title="   Добавить карту"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="GlZ-3u-reL" firstAttribute="top" secondItem="jVU-OH-6Uo" secondAttribute="bottom" constant="15" id="8QO-SF-WbZ"/>
+                            <constraint firstItem="jVU-OH-6Uo" firstAttribute="top" secondItem="Ca7-TE-1js" secondAttribute="bottom" constant="16" id="BkJ-Me-cXf"/>
+                            <constraint firstItem="SW4-3O-ti4" firstAttribute="trailing" secondItem="Oan-Ac-cP1" secondAttribute="trailingMargin" id="SVX-BD-1aU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GlZ-3u-reL" secondAttribute="trailing" id="TQ0-m3-p55"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jVU-OH-6Uo" secondAttribute="trailing" id="VxY-2X-ZdN"/>
+                            <constraint firstItem="GlZ-3u-reL" firstAttribute="leading" secondItem="Oan-Ac-cP1" secondAttribute="leadingMargin" id="a06-qA-uqK"/>
+                            <constraint firstItem="jVU-OH-6Uo" firstAttribute="leading" secondItem="Oan-Ac-cP1" secondAttribute="leadingMargin" id="paw-Ak-48K"/>
+                            <constraint firstItem="SW4-3O-ti4" firstAttribute="top" secondItem="GlZ-3u-reL" secondAttribute="bottom" constant="8" id="qck-cU-6MI"/>
+                            <constraint firstItem="SW4-3O-ti4" firstAttribute="leading" secondItem="Oan-Ac-cP1" secondAttribute="leadingMargin" id="uf0-Zv-7Zw"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YAf-kF-ygD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5703.75" y="1614.0845070422536"/>
+        </scene>
+        <!--Выбор колонки-->
+        <scene sceneID="I6M-qM-oQn">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="k5v-0d-qye" customClass="PumpSelectedViewController" customModule="app" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JgI-es-Gbk"/>
+                        <viewControllerLayoutGuide type="bottom" id="Lsg-ID-AK6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" misplaced="YES" id="ccs-pf-5V7">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="1LR-XO-1iK">
+                                <rect key="frame" x="8" y="20" width="304" height="140"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gRN-zu-CTP">
+                                        <rect key="frame" x="0.0" y="0.0" width="142" height="140"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="OFb-fz-M7U">
+                                                <rect key="frame" x="0.0" y="0.0" width="60" height="140"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sN3-ef-BoR" customClass="UIPumpButton" customModule="app" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="60" id="L9D-PK-DPj"/>
+                                                            <constraint firstAttribute="width" constant="60" id="oRM-iS-4Ae"/>
+                                                        </constraints>
+                                                        <color key="tintColor" red="0.99019607843137258" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="ыва" backgroundImage="PumpIcon_1">
+                                                            <color key="titleColor" red="0.99019607843137258" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <state key="selected" backgroundImage="PumpIconSelected_1"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="pumpId">
+                                                                <integer key="value" value="0"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r7q-ec-o59" customClass="UIPumpButton" customModule="app" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="80" width="60" height="60"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="60" id="ilu-B7-0xP"/>
+                                                            <constraint firstAttribute="height" constant="60" id="jSo-U5-zx1"/>
+                                                        </constraints>
+                                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        <state key="normal" backgroundImage="PumpIcon_2"/>
+                                                        <state key="selected" backgroundImage="PumpIconSelected_2">
+                                                            <color key="titleColor" red="0.87201619149999998" green="0.1148179248" blue="0.0060078841629999996" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="pumpId">
+                                                                <integer key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jSD-JO-a5p">
+                                                <rect key="frame" x="70" y="0.0" width="2" height="140"/>
+                                                <color key="backgroundColor" red="0.84698706865310669" green="0.8471064567565918" blue="0.84694933891296387" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="2" id="XVv-Cq-No0"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="hNT-VA-c2I">
+                                                <rect key="frame" x="82" y="0.0" width="60" height="140"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rgR-cb-KI8" customClass="UIPumpButton" customModule="app" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="60" id="b3Q-6U-dN8"/>
+                                                            <constraint firstAttribute="height" constant="60" id="mq4-Nh-WPg"/>
+                                                        </constraints>
+                                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        <state key="normal" backgroundImage="PumpIcon_3"/>
+                                                        <state key="selected" backgroundImage="PumpIconSelected_3"/>
+                                                        <state key="highlighted" backgroundImage="PumpIconSelected_3">
+                                                            <color key="titleColor" red="0.87201619149999998" green="0.1148179248" blue="0.0060078841629999996" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="pumpId">
+                                                                <integer key="value" value="2"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X5V-KQ-MUS" customClass="UIPumpButton" customModule="app" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="80" width="60" height="60"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="60" id="cYb-DZ-lrA"/>
+                                                            <constraint firstAttribute="height" constant="60" id="t8U-My-Gfp"/>
+                                                        </constraints>
+                                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        <state key="normal" backgroundImage="PumpIcon_4">
+                                                            <color key="titleColor" red="0.87201619149999998" green="0.1148179248" blue="0.0060078841629999996" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <state key="selected" backgroundImage="PumpIconSelected_4"/>
+                                                        <state key="highlighted" backgroundImage="PumpIconSelected_4"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="pumpId">
+                                                                <integer key="value" value="3"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2WR-MM-xM7">
+                                        <rect key="frame" x="162" y="0.0" width="142" height="140"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="NkW-Vm-EdV">
+                                                <rect key="frame" x="0.0" y="0.0" width="60" height="140"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u5L-MQ-9qA" customClass="UIPumpButton" customModule="app" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="60" id="OtZ-ij-z0i"/>
+                                                            <constraint firstAttribute="height" constant="60" id="tAA-Rr-ip7"/>
+                                                        </constraints>
+                                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        <state key="normal" backgroundImage="PumpIcon_5">
+                                                            <color key="titleColor" red="0.87201619149999998" green="0.1148179248" blue="0.0060078841629999996" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <state key="selected" backgroundImage="PumpIconSelected_5"/>
+                                                        <state key="highlighted" backgroundImage="PumpIconSelected_5"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="pumpId">
+                                                                <integer key="value" value="4"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zCJ-1C-wcP" customClass="UIPumpButton" customModule="app" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="80" width="60" height="60"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="60" id="50M-No-shX"/>
+                                                            <constraint firstAttribute="height" constant="60" id="IxQ-tN-PGK"/>
+                                                        </constraints>
+                                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        <state key="normal" backgroundImage="PumpIcon_6">
+                                                            <color key="titleColor" red="0.87201619149999998" green="0.1148179248" blue="0.0060078841629999996" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <state key="selected" backgroundImage="PumpIconSelected_6"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="pumpId">
+                                                                <integer key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rlj-73-tiI">
+                                                <rect key="frame" x="70" y="0.0" width="2" height="140"/>
+                                                <color key="backgroundColor" red="0.84698706865310669" green="0.8471064567565918" blue="0.84694933891296387" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="2" id="Y9E-73-Nwa"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="4uM-FS-yEu">
+                                                <rect key="frame" x="82" y="0.0" width="60" height="140"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uoD-Wx-JiE" customClass="UIPumpButton" customModule="app" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="60" id="5xR-QG-dxZ"/>
+                                                            <constraint firstAttribute="height" constant="60" id="Wt2-gQ-Jzf"/>
+                                                        </constraints>
+                                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        <state key="normal" backgroundImage="PumpIcon_7">
+                                                            <color key="titleColor" red="0.87201619149999998" green="0.1148179248" blue="0.0060078841629999996" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <state key="selected" backgroundImage="PumpIconSelected_7"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="pumpId">
+                                                                <integer key="value" value="6"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wvQ-cy-2O8" customClass="UIPumpButton" customModule="app" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="80" width="60" height="60"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="60" id="Qev-i1-d7f"/>
+                                                            <constraint firstAttribute="width" constant="60" id="lpK-Vy-57q"/>
+                                                        </constraints>
+                                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        <state key="normal" backgroundImage="PumpIcon_8">
+                                                            <color key="titleColor" red="0.87201619149999998" green="0.1148179248" blue="0.0060078841629999996" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <state key="selected" backgroundImage="PumpIconSelected_8"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="pumpId">
+                                                                <integer key="value" value="7"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView hidden="YES" opaque="NO" alpha="0.0" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="8m5-d5-dXw">
+                                <rect key="frame" x="0.0" y="190" width="320" height="201"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2wI-RC-13P">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="2wI-RC-13P" secondAttribute="height" multiplier="15:2" id="Yci-pG-Mpl"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="Fuel_92_button"/>
+                                        <connections>
+                                            <segue destination="sie-0K-Odf" kind="show" id="3Cx-DY-LO0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kaY-O4-OVN">
+                                        <rect key="frame" x="0.0" y="53" width="320" height="42"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="kaY-O4-OVN" secondAttribute="height" multiplier="15:2" id="szi-iW-xG9"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="Fuel_95_button"/>
+                                        <connections>
+                                            <segue destination="sie-0K-Odf" kind="show" id="4UC-6n-GrP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EvJ-7S-pDr">
+                                        <rect key="frame" x="0.0" y="105" width="320" height="43"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="EvJ-7S-pDr" secondAttribute="height" multiplier="15:2" id="sQB-Ed-hjV"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="Fuel_jet_button"/>
+                                        <connections>
+                                            <segue destination="sie-0K-Odf" kind="show" id="RZf-n0-Nvj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ce-nW-uBP">
+                                        <rect key="frame" x="0.0" y="158" width="320" height="43"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="5Ce-nW-uBP" secondAttribute="height" multiplier="15:2" id="ynn-8d-0hD"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="Fuel_dt_button"/>
+                                        <connections>
+                                            <segue destination="sie-0K-Odf" kind="show" id="LOS-Kw-44f"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="2wI-RC-13P" firstAttribute="leading" secondItem="8m5-d5-dXw" secondAttribute="leading" id="1zj-1h-fVS"/>
+                                    <constraint firstItem="2wI-RC-13P" firstAttribute="width" secondItem="8m5-d5-dXw" secondAttribute="width" id="Ino-sV-gqU"/>
+                                    <constraint firstAttribute="trailing" secondItem="2wI-RC-13P" secondAttribute="trailing" id="w2q-0q-JF3"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1LR-XO-1iK" firstAttribute="top" secondItem="JgI-es-Gbk" secondAttribute="bottom" constant="20" id="7gV-w5-4gU"/>
+                            <constraint firstItem="8m5-d5-dXw" firstAttribute="top" secondItem="1LR-XO-1iK" secondAttribute="bottom" constant="30" id="XLc-Ib-fqV"/>
+                            <constraint firstItem="8m5-d5-dXw" firstAttribute="centerX" secondItem="ccs-pf-5V7" secondAttribute="centerX" id="XyQ-kN-xkX"/>
+                            <constraint firstItem="8m5-d5-dXw" firstAttribute="width" secondItem="ccs-pf-5V7" secondAttribute="width" id="nHz-Lo-Ysp"/>
+                            <constraint firstItem="1LR-XO-1iK" firstAttribute="centerX" secondItem="ccs-pf-5V7" secondAttribute="centerX" id="p7k-yc-f6i"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Выбор колонки" id="A5a-mu-K8o">
+                        <barButtonItem key="backBarButtonItem" title=" " id="chF-DN-ykA"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="fuelButtonsWrapper" destination="8m5-d5-dXw" id="6WD-Zi-jZZ"/>
+                        <outletCollection property="pumps" destination="zCJ-1C-wcP" collectionClass="NSMutableArray" id="VFq-rp-xJd"/>
+                        <outletCollection property="pumps" destination="uoD-Wx-JiE" collectionClass="NSMutableArray" id="Wd4-YI-Mtg"/>
+                        <outletCollection property="pumps" destination="wvQ-cy-2O8" collectionClass="NSMutableArray" id="1jw-Ug-BF7"/>
+                        <outletCollection property="pumps" destination="sN3-ef-BoR" collectionClass="NSMutableArray" id="fPr-hj-ym3"/>
+                        <outletCollection property="pumps" destination="rgR-cb-KI8" collectionClass="NSMutableArray" id="7Q4-0n-AYp"/>
+                        <outletCollection property="pumps" destination="u5L-MQ-9qA" collectionClass="NSMutableArray" id="ODq-Rg-wTd"/>
+                        <outletCollection property="pumps" destination="X5V-KQ-MUS" collectionClass="NSMutableArray" id="fxl-5J-fzc"/>
+                        <outletCollection property="pumps" destination="r7q-ec-o59" collectionClass="NSMutableArray" id="JWM-6w-b2z"/>
+                        <outletCollection property="fuels" destination="2wI-RC-13P" collectionClass="NSMutableArray" id="tKV-C9-wQv"/>
+                        <outletCollection property="fuels" destination="kaY-O4-OVN" collectionClass="NSMutableArray" id="dsk-Su-HNQ"/>
+                        <outletCollection property="fuels" destination="EvJ-7S-pDr" collectionClass="NSMutableArray" id="8W3-0R-RXO"/>
+                        <outletCollection property="fuels" destination="5Ce-nW-uBP" collectionClass="NSMutableArray" id="qCz-D6-Dp5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Exy-uy-nq1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5704.347826086957" y="122.28260869565219"/>
+        </scene>
+        <!--Fuel Payment View Controller-->
+        <scene sceneID="Yli-bl-Tsw">
+            <objects>
+                <viewController id="sie-0K-Odf" customClass="FuelPaymentViewController" customModule="app" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="f1G-ke-3kM"/>
+                        <viewControllerLayoutGuide type="bottom" id="1ep-gD-3s4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" misplaced="YES" id="ywc-x4-TZj">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ycc-q1-of6">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="455"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="f36-Zp-OFp">
+                                        <rect key="frame" x="0.0" y="15" width="320" height="245"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Объем от 1 до 150 л " textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pXT-4N-iAV">
+                                                <rect key="frame" x="16" y="0.0" width="288" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="5qm-Zg-zI3"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="go"/>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Сумма от 10 до 15000 руб " textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v8d-V5-Jot">
+                                                <rect key="frame" x="16" y="65" width="288" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="C5d-ic-J7A"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad"/>
+                                            </textField>
+                                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="VQ5-3r-MHQ">
+                                                <rect key="frame" x="16" y="130" width="288" height="50"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Card_one" translatesAutoresizingMaskIntoConstraints="NO" id="o31-It-YDN">
+                                                        <rect key="frame" x="0.0" y="7" width="288" height="37"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="37" id="zbN-lf-nRx"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="o31-It-YDN" firstAttribute="leading" secondItem="VQ5-3r-MHQ" secondAttribute="leading" id="DWW-Ta-DyU"/>
+                                                    <constraint firstItem="o31-It-YDN" firstAttribute="centerY" secondItem="VQ5-3r-MHQ" secondAttribute="centerY" id="LHX-RD-5RK"/>
+                                                    <constraint firstAttribute="trailing" secondItem="o31-It-YDN" secondAttribute="trailing" id="UeW-Be-bcx"/>
+                                                    <constraint firstAttribute="height" constant="50" id="VEz-gc-jRu"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IPB-gK-FcX">
+                                                <rect key="frame" x="16" y="195" width="288" height="50"/>
+                                                <color key="backgroundColor" red="0.92941176469999998" green="0.10980392160000001" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="Uow-gr-snu"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                <state key="normal" title="Оплатить">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="payButtonClicked:" destination="sie-0K-Odf" eventType="touchUpInside" id="7Sj-Lx-HDb"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="v8d-V5-Jot" firstAttribute="leading" secondItem="f36-Zp-OFp" secondAttribute="leading" constant="16" id="TF7-Jz-j2a"/>
+                                            <constraint firstItem="VQ5-3r-MHQ" firstAttribute="leading" secondItem="f36-Zp-OFp" secondAttribute="leading" constant="16" id="eId-uu-EJ2"/>
+                                            <constraint firstAttribute="trailing" secondItem="pXT-4N-iAV" secondAttribute="trailing" constant="16" id="fSx-ug-bWz"/>
+                                            <constraint firstItem="IPB-gK-FcX" firstAttribute="leading" secondItem="f36-Zp-OFp" secondAttribute="leading" constant="16" id="mhw-aN-A46"/>
+                                            <constraint firstAttribute="trailing" secondItem="v8d-V5-Jot" secondAttribute="trailing" constant="16" id="mwo-Fq-oxR"/>
+                                            <constraint firstAttribute="trailing" secondItem="IPB-gK-FcX" secondAttribute="trailing" constant="16" id="olu-hw-zuK"/>
+                                            <constraint firstItem="pXT-4N-iAV" firstAttribute="leading" secondItem="f36-Zp-OFp" secondAttribute="leading" constant="16" id="rBO-K2-bdR"/>
+                                            <constraint firstAttribute="trailing" secondItem="VQ5-3r-MHQ" secondAttribute="trailing" constant="16" id="rp1-NZ-KCf"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="f36-Zp-OFp" firstAttribute="width" secondItem="ycc-q1-of6" secondAttribute="width" id="E0V-hw-ELN"/>
+                                    <constraint firstAttribute="trailing" secondItem="f36-Zp-OFp" secondAttribute="trailing" id="Qwb-65-ISW"/>
+                                    <constraint firstItem="f36-Zp-OFp" firstAttribute="leading" secondItem="ycc-q1-of6" secondAttribute="leading" id="Y2X-92-0St"/>
+                                    <constraint firstAttribute="bottom" secondItem="f36-Zp-OFp" secondAttribute="bottom" constant="198" id="hK2-1P-DWb"/>
+                                    <constraint firstItem="f36-Zp-OFp" firstAttribute="top" secondItem="ycc-q1-of6" secondAttribute="top" constant="15" id="tzs-IL-1hd"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1ep-gD-3s4" firstAttribute="top" secondItem="ycc-q1-of6" secondAttribute="bottom" id="AZH-UG-ZP1"/>
+                            <constraint firstAttribute="trailing" secondItem="ycc-q1-of6" secondAttribute="trailing" id="R6b-DW-rev"/>
+                            <constraint firstItem="ycc-q1-of6" firstAttribute="leading" secondItem="ywc-x4-TZj" secondAttribute="leading" id="ZkS-48-SSU"/>
+                            <constraint firstItem="ycc-q1-of6" firstAttribute="top" secondItem="f1G-ke-3kM" secondAttribute="bottom" id="zcb-Xo-XRq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="litersField" destination="pXT-4N-iAV" id="RKh-HM-Me3"/>
+                        <outlet property="payButton" destination="IPB-gK-FcX" id="PDi-Sb-rs9"/>
+                        <outlet property="rublesField" destination="v8d-V5-Jot" id="O1Y-hD-CWY"/>
+                        <segue destination="tWT-Yi-M67" kind="show" identifier="openFinal" id="Llb-tZ-RMA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PIx-yd-la8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6519.375" y="122.53521126760563"/>
+        </scene>
+        <!--Final View Controller-->
+        <scene sceneID="3g7-s0-XOG">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="tWT-Yi-M67" customClass="FinalViewController" customModule="app" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="86V-kL-b4x"/>
+                        <viewControllerLayoutGuide type="bottom" id="xaJ-yf-gr5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="a4F-6J-IAi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner" translatesAutoresizingMaskIntoConstraints="NO" id="C9f-FG-JeA">
+                                <rect key="frame" x="0.0" y="356" width="320" height="212"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="C9f-FG-JeA" secondAttribute="height" multiplier="375:248" id="UlX-zL-4jP"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pump" translatesAutoresizingMaskIntoConstraints="NO" id="3d0-hI-IRI">
+                                <rect key="frame" x="0.0" y="70" width="192" height="215"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="3d0-hI-IRI" secondAttribute="height" multiplier="172:193" id="0d1-5M-YVl"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Успешная оплата!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EhW-q0-6V0">
+                                <rect key="frame" x="36" y="70" width="248" height="29"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="24"/>
+                                <color key="textColor" red="0.92941176470588238" green="0.10980392156862745" blue="0.16862745098039217" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RwR-m9-o71">
+                                <rect key="frame" x="36" y="107" width="248" height="96"/>
+                                <string key="text">После заправки
+не забудьте достать
+пистолет из заправочной
+горловины безнобака</string>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tPA-tJ-JTN">
+                                <rect key="frame" x="280" y="31" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="tPA-tJ-JTN" secondAttribute="height" multiplier="1:1" id="aVJ-J4-22o"/>
+                                    <constraint firstAttribute="width" constant="30" id="vSO-IS-2VY"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="close_button"/>
+                                <connections>
+                                    <action selector="closeButtonClicked:" destination="tWT-Yi-M67" eventType="touchUpInside" id="oWz-2T-4U2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EhW-q0-6V0" firstAttribute="top" secondItem="86V-kL-b4x" secondAttribute="bottom" constant="50" id="13x-aK-UyE"/>
+                            <constraint firstAttribute="trailing" secondItem="C9f-FG-JeA" secondAttribute="trailing" id="6Pw-pC-pJx"/>
+                            <constraint firstAttribute="trailing" secondItem="tPA-tJ-JTN" secondAttribute="trailing" constant="10" id="AhY-MB-9E9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EhW-q0-6V0" secondAttribute="trailing" constant="20" id="D15-Ja-bym"/>
+                            <constraint firstItem="3d0-hI-IRI" firstAttribute="top" secondItem="86V-kL-b4x" secondAttribute="bottom" constant="50" id="EdG-WX-Vq7"/>
+                            <constraint firstItem="EhW-q0-6V0" firstAttribute="leading" secondItem="a4F-6J-IAi" secondAttribute="leadingMargin" constant="20" id="H43-qv-hAu"/>
+                            <constraint firstItem="C9f-FG-JeA" firstAttribute="leading" secondItem="a4F-6J-IAi" secondAttribute="leading" id="IyF-ji-3FJ"/>
+                            <constraint firstItem="tPA-tJ-JTN" firstAttribute="top" secondItem="86V-kL-b4x" secondAttribute="bottom" constant="11" id="PPy-zb-dtd"/>
+                            <constraint firstItem="RwR-m9-o71" firstAttribute="trailing" secondItem="EhW-q0-6V0" secondAttribute="trailing" id="Q4k-Ed-iyb"/>
+                            <constraint firstItem="3d0-hI-IRI" firstAttribute="width" secondItem="a4F-6J-IAi" secondAttribute="width" multiplier="0.6" id="Rew-WB-ptv"/>
+                            <constraint firstItem="RwR-m9-o71" firstAttribute="top" secondItem="EhW-q0-6V0" secondAttribute="bottom" constant="8" id="gSc-2L-eir"/>
+                            <constraint firstItem="3d0-hI-IRI" firstAttribute="leading" secondItem="a4F-6J-IAi" secondAttribute="leading" id="gcO-1f-Aux"/>
+                            <constraint firstItem="xaJ-yf-gr5" firstAttribute="top" secondItem="C9f-FG-JeA" secondAttribute="bottom" id="hc1-5u-4Ju"/>
+                            <constraint firstItem="RwR-m9-o71" firstAttribute="leading" secondItem="EhW-q0-6V0" secondAttribute="leading" id="i2Y-jA-DAb"/>
+                            <constraint firstItem="3d0-hI-IRI" firstAttribute="top" secondItem="86V-kL-b4x" secondAttribute="bottom" constant="50" id="sm7-IN-IAj"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="URe-NL-DKV" kind="unwind" identifier="goToRoot" unwindAction="unwindToContainerWithSegue:" id="M8z-vE-3TD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pVd-Sb-ygW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="URe-NL-DKV" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="7438" y="123"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="3kO-62-aQ6">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="uV3-iV-khb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="k9A-HP-8xK"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Zrh-Ri-fzg">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.92941176470588238" green="0.10980392156862745" blue="0.16862745098039217" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBar>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                            <color key="value" red="0.92941176470588238" green="0.10980392156862745" blue="0.16862745098039217" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="selectedIndex">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <segue destination="SrO-az-Ajb" kind="relationship" relationship="viewControllers" id="Kfl-HG-oWb"/>
+                        <segue destination="wLn-pq-7Di" kind="relationship" relationship="viewControllers" id="57G-3t-8p1"/>
+                        <segue destination="VbR-Cg-vlF" kind="relationship" relationship="viewControllers" id="qFn-Ih-Tcb"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wid-wR-uBL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2935.1999999999998" y="122.78860569715144"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ytr-gE-RfH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wLn-pq-7Di" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="icon_gas" id="0if-jv-HlY">
+                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="46x-ga-h5W">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="2vT-2D-6AN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OrQ-tt-h75" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3873.913043478261" y="122.28260869565219"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="BYZ-tk-wCV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SrO-az-Ajb" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="icon_offer" id="BzK-ky-lSy">
+                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.92941176470588238" green="0.10980392156862745" blue="0.16862745098039217" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YCc-re-Sd9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="XxB-kD-c1u" kind="relationship" relationship="rootViewController" id="S0Q-Xp-4Gw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fRD-HH-Yqo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3874" y="-623"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kgA-1I-bya">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VbR-Cg-vlF" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="icon_account" id="B0Z-0I-q9t">
+                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yVJ-TQ-sAy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="y4b-be-PNM" kind="relationship" relationship="rootViewController" id="aGZ-lL-s3y"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jV1-bV-7xo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3874" y="936"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Card_one" width="359" height="50"/>
+        <image name="Credit_Card_One" width="229" height="47"/>
+        <image name="Credit_Card_Two" width="228" height="47"/>
+        <image name="Fuel_92_button" width="375" height="50"/>
+        <image name="Fuel_95_button" width="375" height="50"/>
+        <image name="Fuel_dt_button" width="375" height="50"/>
+        <image name="Fuel_jet_button" width="375" height="50"/>
+        <image name="PumpIconSelected_1" width="70" height="70"/>
+        <image name="PumpIconSelected_2" width="70" height="70"/>
+        <image name="PumpIconSelected_3" width="70" height="70"/>
+        <image name="PumpIconSelected_4" width="70" height="70"/>
+        <image name="PumpIconSelected_5" width="70" height="70"/>
+        <image name="PumpIconSelected_6" width="70" height="70"/>
+        <image name="PumpIconSelected_7" width="70" height="70"/>
+        <image name="PumpIconSelected_8" width="70" height="70"/>
+        <image name="PumpIcon_1" width="70" height="70"/>
+        <image name="PumpIcon_2" width="70" height="70"/>
+        <image name="PumpIcon_3" width="70" height="70"/>
+        <image name="PumpIcon_4" width="70" height="70"/>
+        <image name="PumpIcon_5" width="70" height="70"/>
+        <image name="PumpIcon_6" width="70" height="70"/>
+        <image name="PumpIcon_7" width="70" height="70"/>
+        <image name="PumpIcon_8" width="70" height="70"/>
+        <image name="arrow" width="9" height="14"/>
+        <image name="banner" width="375" height="248"/>
+        <image name="close_button" width="24" height="24"/>
+        <image name="icon_account" width="26" height="29"/>
+        <image name="icon_gas" width="29" height="29"/>
+        <image name="icon_offer" width="31" height="31"/>
+        <image name="offer_one" width="375" height="158"/>
+        <image name="offer_two" width="375" height="158"/>
+        <image name="pump" width="290" height="290"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="RZf-n0-Nvj"/>
+    </inferredMetricsTieBreakers>
+    <color key="tintColor" red="0.92941176470588238" green="0.10980392156862745" blue="0.16862745098039217" alpha="1" colorSpace="calibratedRGB"/>
 </document>
