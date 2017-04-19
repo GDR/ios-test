@@ -8,4 +8,5 @@ target 'app' do
   # Pods for app
   pod 'GoogleMaps'
   pod 'MBProgressHUD', '~> 1.0.0'
+  pod 'HockeySDK', '~> 4.1.4'
 end

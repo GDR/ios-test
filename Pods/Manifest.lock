@@ -4,16 +4,21 @@ PODS:
   - GoogleMaps/Base (2.2.0)
   - GoogleMaps/Maps (2.2.0):
     - GoogleMaps/Base
+  - HockeySDK (4.1.4):
+    - HockeySDK/DefaultLib (= 4.1.4)
+  - HockeySDK/DefaultLib (4.1.4)
   - MBProgressHUD (1.0.0)
 
 DEPENDENCIES:
   - GoogleMaps
+  - HockeySDK (~> 4.1.4)
   - MBProgressHUD (~> 1.0.0)
 
 SPEC CHECKSUMS:
   GoogleMaps: 104c418d61ab8a05dff06ed0784c25ea9d37da45
+  HockeySDK: 78a3f8bb9100277b531defc56c970369a3ca267a
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
 
-PODFILE CHECKSUM: 21e3727f09793235d50a78256d5a8e00c4f3c226
+PODFILE CHECKSUM: 4594f6d70418ffc690bd2cf14ae6f0ae514655eb
 
 COCOAPODS: 1.2.0

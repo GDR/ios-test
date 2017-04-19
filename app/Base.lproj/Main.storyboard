@@ -100,7 +100,7 @@
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" misplaced="YES" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -1278,7 +1278,7 @@
                         <viewControllerLayoutGuide type="top" id="JgI-es-Gbk"/>
                         <viewControllerLayoutGuide type="bottom" id="Lsg-ID-AK6"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" misplaced="YES" id="ccs-pf-5V7">
+                    <view key="view" contentMode="scaleToFill" id="ccs-pf-5V7">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -1561,7 +1561,7 @@
                         <viewControllerLayoutGuide type="top" id="f1G-ke-3kM"/>
                         <viewControllerLayoutGuide type="bottom" id="1ep-gD-3s4"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" misplaced="YES" id="ywc-x4-TZj">
+                    <view key="view" contentMode="scaleToFill" id="ywc-x4-TZj">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
